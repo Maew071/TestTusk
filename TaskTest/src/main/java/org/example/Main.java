@@ -1,6 +1,5 @@
 package org.example;
 
-import org.apache.commons.net.ftp.FTPClient;
 
 import java.io.*;
 import java.util.Scanner;
@@ -30,14 +29,6 @@ public class Main {
         FileOutputStream fos = new FileOutputStream(downloadFile1);
         boolean b = client.retrieveFile("/" + remoteFile, fos );
 
-
-
-
-        /*
-
-
-        if (scanner.)
-*/
 
 
 

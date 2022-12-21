@@ -1,25 +1,22 @@
 package org.example;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
 public class Search {
 
     public class SearchStudent {
         ObjectMapper objectMapper = new ObjectMapper();
-        Data example = objectMapper.readValue(new File("src/main/resources/Student проб..json"), Data.class);
-        List<Student> students = example.getStudents();
+        org.example.Data example = objectMapper.readValue(new File("src/main/resources/Student проб..json"), org.example.Data.class);
+        List<org.example.Student> students = example.getStudents();
 
-        List<Student> studentByName = new ArrayList<>();
+        List<org.example.Student> studentByName = new ArrayList<>();
 
         for(
-        Student student :students)
+        org.example.Student student :students)
 
         {
             if (student.getName().equals("Student1")) {
@@ -28,10 +25,10 @@ public class Search {
 
         }
 
-        Data search = new Data();
+        org.example.Data search = new org.example.Data();
         search.setStudents(studentByName);
         byte[] bytes = objectMapper.writeValueAsBytes(search);
         File output = new File("src/main/resources/output/output.json");
         Files.write(output.toPath(),bytes);
     }
-}*/
+}

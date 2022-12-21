@@ -1,7 +1,5 @@
 package org.example;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,13 +18,13 @@ public class ReadService {
         URLConnection.connect();
 
         ObjectMapper objectMapper = new ObjectMapper();
-        Data example = objectMapper.readValue(new File("src/main/resources/Student проб..json"), Data.class);
-        List<Student> students = example.getStudents();
+        org.example.Data example = objectMapper.readValue(new File("src/main/resources/Student проб..json"), org.example.Data.class);
+        List<org.example.Student> students = example.getStudents();
 
-        List<Student> studentByName = new ArrayList<>();
+        List<org.example.Student> studentByName = new ArrayList<>();
 
         for(
-                Student student :students) {
+                org.example.Student student :students) {
             if (student.getName().equals("Student1")) {
                 studentByName.add(student);
             }

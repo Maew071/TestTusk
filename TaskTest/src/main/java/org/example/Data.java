@@ -3,17 +3,17 @@ package org.example;
 import java.util.List;
 
 public class Data {
-    List<Student> students;
+    List<org.example.Student> students;
 
     public Data(){
 
     }
 
-    public List<Student> getStudents() {
+    public List<org.example.Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
+    public void setStudents(List<org.example.Student> students) {
         this.students = students;
     }
 }
